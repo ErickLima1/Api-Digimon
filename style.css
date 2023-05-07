@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #d4d3dd, #f8f8f8ce);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.titulo {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+h1 {
+    letter-spacing: 5px;
+    padding: 10px;
+}
+
+
+.digimonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+    position: relative;
+}
+
+.digimon {
+    background-color: #998e8e;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+    margin: 10px;
+    padding: 20px;
+    align-items: center;
+}
+
+.imgContainer {
+    border-radius: 20px;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+}
+
+.info {
+    margin-top: 10px;
+}
+
+.numberId {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 2px 13px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.nome {
+    margin:  15px 0 7px;
+    letter-spacing: 1.5px;
+}
+
+#digimonContainer {
+    position: relative;
+} 
+
+#toolBar {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-380%);
+}
+  
+.digimonCard {
+    margin-bottom: 20px;
+}
+  
+.form-control  {
+    display: inline-block;
+    border: 2px solid #CCC;
+    border-radius: 4px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-control input[type="text"] {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .digimonContainer {
+      justify-content: center;
+    }
+    
+    .digimon {
+      width: 100%;
+    }
+    
+    .imgContainer {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    
+    .imgContainer img {
+      max-width: 100%;
+    }
+  }
+  
